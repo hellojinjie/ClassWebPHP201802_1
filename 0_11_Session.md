@@ -38,7 +38,22 @@ Cookie 的有效域名，默认为当前域名
 不能通过 javascript 来读写cookie
 
 ### 练习1
-1. 向浏览器写入 cookie username=123
+1. 向浏览器写入 cookie username=123，
+	- 尝试不同的参数值；
+	- 通过浏览器的调试功能查看 cookie 的传递和存储 
+2. 读取 $_COOKIE['username']
+
+### Cookie 有哪些不足的地方
+1. 所有的数据都存储在客户端，数据容易被篡改；
+2. 大量的数据通过 cookie 存储占用客户磁盘空间；
+3. 每次访问网站都需要带上cookie，如果数据大了，就会占用很大的网络空间；
+	- 为什么很多的网站，静态资源都是使用单独的域名？    
+
+如何解决这些问题？将数存储在服务器上。
+
+### Session
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNjQwNzg3MV19
+eyJoaXN0b3J5IjpbLTE5NDUwNzI4MDJdfQ==
 -->
