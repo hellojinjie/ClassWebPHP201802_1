@@ -24,6 +24,8 @@
 * **会话 cookie** 	新建cookie默认是会话cookie，有效期直到浏览器关闭。（有些浏览器有会话自动恢复的功能）
 * **持久 cookie** 指定一个特定的过期时间（expire），在过期时间到来之前，会一直存在并有效。
 
+**思考** 并没有相关的删除cookie的api，如何删除一个  cookie
+
 #### 有效路径
 Cookie 在服务端的有效路径 ，默认为当前路径
 url 的组成  schema://domain/path/filename?querystring
@@ -55,5 +57,5 @@ Cookie 的有效域名，默认为当前域名
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDUwNzI4MDJdfQ==
+eyJoaXN0b3J5IjpbLTE2NzEwMTcxNzJdfQ==
 -->
