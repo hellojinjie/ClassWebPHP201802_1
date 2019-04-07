@@ -25,6 +25,9 @@
 * **持久 cookie** 指定一个特定的过期时间（expire），在过期时间到来之前，会一直存在并有效。
 
 **思考** 并没有相关的删除cookie的api，如何删除一个  cookie
+1. expire 为0 或空：会话 cookie
+2. 大于当前时间的 unix timestamp：持久 cookie
+3. 小于或等于当前时间：删除 cookie（已过期的 cookie毫无意义）
 
 #### 有效路径
 Cookie 在服务端的有效路径 ，默认为当前路径
@@ -57,5 +60,5 @@ Cookie 的有效域名，默认为当前域名
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzEwMTcxNzJdfQ==
+eyJoaXN0b3J5IjpbNTU5ODMwMzMzXX0=
 -->
