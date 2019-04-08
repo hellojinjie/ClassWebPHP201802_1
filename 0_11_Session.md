@@ -57,8 +57,22 @@ Cookie 的有效域名，默认为当前域名
 如何解决这些问题？将数存储在服务器上。
 
 ### Session
+一种将会话数据存储在服务器上的技术。服务器为每一个会话保存一个Session，同时将该Session 对应的ID告诉客户端。每次客户发送请求的时候，都带上这个ID，服务端收到ID之后，检索到该Session。
+**思考** 现实生活中有没有类似的例子？  病历本 VS 就诊卡  -> Cookie VS Session
+
+#### PHP Session API
+1. 初始化或者重用已有的 Session：session_start(); 
+2. 读写 Session：$_SESSION
+3. 删除一个 Session 变量：unset($_SESSION['username'])
+4. 删除全部的 Session 变量:
+	1. session_unset()
+	2. $_SESSION = array()
+5. 销毁 session：sesstion_destroy()
+
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5ODMwMzMzXX0=
+eyJoaXN0b3J5IjpbLTMxMzM5MDE2LDU1OTgzMDMzM119
 -->
